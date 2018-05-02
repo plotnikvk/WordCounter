@@ -30,7 +30,7 @@ public class Main {
         }
 
 
-        Map.Entry<String, Integer> MaxStringEntrance = null;
+        Map.Entry<String, Integer> MaxStringEntrance = null;//Находим максимальное количество повторений слов
         for (Map.Entry<String, Integer> item : statistics.entrySet()) {
             Map.Entry<String, Integer> Temp = item;
          if(MaxStringEntrance ==null){
@@ -42,6 +42,6 @@ public class Main {
         }
         System.out.println("\n\nСлово с максимальным количеством повторений:\t\""+MaxStringEntrance.getKey()+"\"\nЭто слово " +
                 "встречается в файле:\t"+MaxStringEntrance.getValue()+" раз");
-        scanner.close();
+        scanner.close();//Закрываем поток
     }
 }
